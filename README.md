@@ -2,10 +2,10 @@
 Scripts to create wine prefixes for certain games with dxvk and vkd3d.
 
 All description and scripts are tested on:
-**Wine**: (system wine stable)
-**OS**: Arch-linux
-**GPU**: Nvidia RTX 3080
-**CPU**: AMD Ryzen 9 5950X
+- **Wine**: (system wine stable)
+- **OS**: Arch-linux
+- **GPU**: Nvidia RTX 3080
+- **CPU**: AMD Ryzen 9 5950X
 
 ## Game-List
 - Assassin's Creed Valhalla
@@ -39,7 +39,7 @@ Login, download and install the game.
 
 ### DXVK-Config
 ```bash
-echo "dxgi.nvapiHack = False" > $HOME//Games/AssassinsCreedValhalla/dxvk.conf
+echo "dxgi.nvapiHack = False" > $HOME/Games/AssassinsCreedValhalla/dxvk.conf
 ```
 
 ### Start the AC-Valhalla
@@ -48,7 +48,5 @@ echo "dxgi.nvapiHack = False" > $HOME//Games/AssassinsCreedValhalla/dxvk.conf
 ```
 
 ### Workaround and fixes
-**Game launch failing**
-The Game DRM checks in with https://public-ubiservices.ubi.com if your distros ca-package does not contain: "DigiCert SHA2 High Assurance Server CA" make sure it is installed.
-**Game runs in slow-motion**
-There is currently a issue with 3th.Gen Ryzen, disable PSS in your BIOS to fix the issue.
+- **Game launch failing** The Game DRM checks in with https://public-ubiservices.ubi.com if your distros ca-package does not contain: "DigiCert SHA2 High Assurance Server CA" make sure it is installed.
+- **Game runs in slow-motion** There is currently a issue with 3th.Gen Ryzen, disable PSS in your BIOS to fix the issue.
